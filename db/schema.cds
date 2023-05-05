@@ -1,5 +1,5 @@
 namespace riskmanagement;
- using { managed } from '@sap/cds/common';
+using { managed } from '@sap/cds/common';
 
  entity Risks : managed {
  key ID : UUID @(Core.Computed : true);
@@ -29,5 +29,5 @@ using { API_BUSINESS_PARTNER as external } from '../srv/external/API_BUSINESS_PA
 entity BusinessPartners as projection on external.A_BusinessPartner {
    key BusinessPartner,
    LastName, 
-   FirstName 
+   FirstName
 } 
